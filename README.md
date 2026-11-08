@@ -2,7 +2,7 @@
 
 **Live transcription of phone calls: Twilio streams the caller's audio over a WebSocket, and Deepgram returns transcripts while the person is still speaking.**
 
-This is the speech-to-text foundation for voice bots. The companion repository [realtime-voice-ai-orchestrator](https://github.com/lavanya1402/realtime-voice-ai-orchestrator) adds call sessions, an LLM call report and a monitoring dashboard.
+This is the speech-to-text foundation for voice bots. This repository is the minimal, single-file version. The full system, with call sessions, an LLM call report, a monitoring dashboard and tests, is [realtime-voice-ai-orchestrator](https://github.com/lavanya1402/realtime-voice-ai-orchestrator).
 
 ## How it works
 
@@ -40,6 +40,10 @@ Set your Twilio number's voice webhook to `https://<NGROK_DOMAIN>/voice`, or sta
 | `make_call.py` | Places an outbound test call through Twilio |
 | `app/`, `ui/dashboard.py` | Early version of the session API and Streamlit dashboard, continued in the orchestrator repo |
 | `.env.example` | Environment variables needed (never commit real keys) |
+
+## License
+
+MIT, see [LICENSE](LICENSE).
 
 ## Author
 
